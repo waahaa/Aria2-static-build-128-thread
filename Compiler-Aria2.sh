@@ -46,7 +46,7 @@ download_aria2 ()
 Thread_128 ()
 {
 	cd aria2-${aria2_version}
-	sed -i 's/"1", 1, 16/"128", 1, -1/g' ./src/OptionHandlerFactory.cc
+	sed -i 's/"1", 1, 16/"1280", 1, -1/g' ./src/OptionHandlerFactory.cc
 	sed -i 's/"20M", 1_m, 1_g/"4K", 1_k, 1_g/g' ./src/OptionHandlerFactory.cc
 	sed -i 's/PREF_CONNECT_TIMEOUT, TEXT_CONNECT_TIMEOUT, "60", 1, 600/PREF_CONNECT_TIMEOUT, TEXT_CONNECT_TIMEOUT, "30", 1, 600/g' ./src/OptionHandlerFactory.cc
 	sed -i 's/PREF_PIECE_LENGTH, TEXT_PIECE_LENGTH, "1M", 1_m, 1_g/PREF_PIECE_LENGTH, TEXT_PIECE_LENGTH, "4k", 1_k, 1_g/g' ./src/OptionHandlerFactory.cc
