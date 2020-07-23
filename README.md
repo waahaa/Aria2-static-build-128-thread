@@ -11,7 +11,7 @@
 
 ### 使用方法
 
-	git clone https://github.com/king567/Aria2-static-build-128-thread.git
+	git clone https://github.com/waahaa/Aria2-static-build-128-thread.git
 	cd Aria2-static-build-128-thread
 	chmod +x Compiler-Aria2.sh
 	sh Compiler-Aria2.sh
